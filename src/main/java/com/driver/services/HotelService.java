@@ -40,6 +40,7 @@ public class HotelService {
             Hotel hotel = hotelRepository.hotelDb.get(hName);
             int size = hotel.getFacilities().size();
             if(size>0 && size>=count){
+                hotelName.clear();
                 count = size;
                 hotelName.add(hName);
             }
